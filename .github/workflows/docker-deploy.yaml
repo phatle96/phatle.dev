@@ -44,6 +44,7 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
           cd ${{ vars.VPS_PATH }} &&
+          git pull origin main &&
           docker compose pull && 
           docker compose down &&
           docker compose up -d
