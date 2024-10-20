@@ -1,6 +1,6 @@
 services:
   app:
-    image: phatlv96/phatle-site:latest
+    image: phatlv96/phatle-site:${IMAGE_TAG}
     ports:
       - "3000:3000"
     container_name: phatle-site
