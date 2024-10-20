@@ -1,0 +1,6 @@
+services:
+  app:
+    image: phatlv96/phatle-site:latest
+    ports:
+      - "3000:3000"
+    container_name: phatle-site
